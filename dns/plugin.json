@@ -1,0 +1,46 @@
+{
+    "pluginName": "DNS",
+    "description": "DNS 管理工具，可以快速切换 DNS，获取当前 DNS，清空 DNS 缓存",
+    "author": "ripples",
+    "homepage": "http://github.com/ripples-alive",
+    "preload": "preload.js",
+    "logo": "icon/icon.png",
+    "platform": [
+        "darwin"
+    ],
+    "version": "0.0.1",
+    "features": [
+        {
+            "code": "switch-dns",
+            "explain": "切换 DNS",
+            "cmds": [
+                "switch dns",
+                "sdns",
+                "切换DNS",
+                {
+                    "type": "regex",
+                    "label": "设置 DNS",
+                    "match": "/((?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}\\s*,?\\s*)+/i"
+                }
+            ]
+        },
+        {
+            "code": "get-dns",
+            "explain": "获取当前 DNS",
+            "cmds": [
+                "get dns",
+                "gdns",
+                "获取DNS"
+            ]
+        },
+        {
+            "code": "flush-dns",
+            "explain": "清空 DNS 缓存",
+            "cmds": [
+                "flush dns",
+                "fdns",
+                "清空DNS缓存"
+            ]
+        }
+    ]
+}
