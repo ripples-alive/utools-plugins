@@ -2,7 +2,7 @@
     "pluginName": "DNS",
     "description": "DNS 管理工具，可以快速切换 DNS，获取当前 DNS，清空 DNS 缓存",
     "author": "ripples",
-    "homepage": "http://github.com/ripples-alive",
+    "homepage": "https://github.com/ripples-alive/utools-plugins/tree/master/dns",
     "preload": "preload.js",
     "logo": "icon/icon.png",
     "platform": [
